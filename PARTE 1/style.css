@@ -1,49 +1,280 @@
-#banner{
+.body {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(#7a7777,#000000);
+}
+
+.cabecalho {
+    background: #838080;
+    padding: 29px 0;
+}
+
+.logo{
+    position: relative;
+    right: -22em;
+}
+
+.caixa{
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+
+nav {
+    position: absolute;
+    top: 240px;
+    right: 240px;
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a{
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: #c78c19;
+    text-decoration: underline;
+}
+
+.produtos{
+    width: 940px;
+    height: 440px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.produtos li{
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    
+}
+
+.produtos li:hover{
+    border-color: #c78c19;
+    cursor: pointer;
+    
+}
+
+.produtos li:active{
+    border-color: #088c19;
+}
+
+.produtos li:hover h2{
+    font-size: 36px;
+}
+
+.produtos h2{
+    font-size: 30px;
+    font-weight: bold;
+    
+}
+
+.produto-descricao{
+    font-size: 18px;
+}
+
+.produto-preco{
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px 0 0;
+}
+
+.rodape {
+    padding: 40px 0;
+    text-align: center;
+    background: url("bg.jpg");
+}
+
+.copyright{
+    color: white;
+    font-size: 13px;
+}
+
+.form {
+    margin: 40px 0;
+}
+
+.form label, .form legend{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.input-padrao{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.checkbox{
+    margin: 20px 0;
+}
+
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    background: orange;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    transition: 0.3s all;
+}
+
+.enviar:hover{
+    background: darkorange;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.table{
+    margin: 20px 0 40px;
+}
+
+.thead{
+    background: #555555;
+    color: white;
+    font-weight: bold ;
+}
+
+.tbody td, .thead th {
+    border: 1px solid #000000;
+    padding: 8px 15px ;
+}
+
+/* css da pagina inial */
+.banner {
     width: 100%;
 }
 
+.titulo-principal {
+    text-align: center;
+    font-size: 1.5em;
+    margin: 0 0 1em;
+    line-height: 1.3em;
+    clear: left;
+}
+
 .principal{
-    background: #cccccc;
-    padding: 30px;
+    width: 320px;
+    height: 500px;
+    border: 5px solid #000000;
+    border-radius: 10px;
+    float: left;
+    position: relative;
+    left: 70%;
+    padding: 15px;
+    background: #fefefe;
+    line-height: 1.4em;
+    text-align: justify;
 }
 
-.titulo-principal{
-    padding-left: 20px;
-}
-
-.titulo-centralizado{
+.missao{
+    font-size: 1.1em;
     text-align: center;
 }
 
-p {
-    text-align: center;
+.principal p {
+    margin: 0 0 1em;
 }
 
-#missao {
-    font-size: 20px;
+.principal strong {
+    font-weight: bold;
 }
 
-em strong{
-    color: #ff0000;
-}
-
-.itens{
+.principal em {
     font-style: italic;
 }
 
-.beneficios{
-    background: #ffffff;
-    padding: 20px;
+.utensilios{
+    width: 120px;
+    border-radius: 100px;
+    float: left;
+    margin: 0 20px 20px 0;
 }
 
+.beneficios{
+    width: 320px;
+    height: 500px;
+    border: 5px solid #000000;
+    border-radius: 10px;
+    float: left;
+    position: relative;
+    left: -55%;
+    padding: 15px;
+    background: #fefefe;
+    line-height: 1.4em;
+    margin-bottom: 5em;
+    
+}
 
-ul{
+.conteudo-beneficios{
+    width: 640px;
+    margin: 0 auto;
+}
+
+.lista-beneficios{
+    width: 40%;
     display: inline-block;
     vertical-align: top;
-    width: 20%;
-    margin-right: 15%;
+}
+
+.itens{
+    line-height: 1.5;
+}
+
+.itens:first-child{
+    font-weight: bold;
 }
 
 .imagembeneficios{
-    width: 50%;
+    width: 60%;
+}
+
+.mapa {
+    width: 320px;
+    height: 500px;
+    border: 5px solid #000000;
+    border-radius: 10px;
+    float: left;
+    position: relative;
+    left: 5.5%;
+    margin-left: 3.5em;
+    padding: 15px;
+    background: #fefefe;
+    line-height: 1.4em;
+    text-align: center;
+    
+}
+
+.mapa p{
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+.video{
+
+    width: 580px;
+    margin: 5em auto;
+}
+
+.itens:before {
+    content: "✪  ";
 }
