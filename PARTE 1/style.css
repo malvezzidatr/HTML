@@ -19,7 +19,7 @@
     margin: 0 auto;
 }
 
-nav {
+.nav {
     position: absolute;
     top: 240px;
     right: 240px;
@@ -231,21 +231,14 @@ nav a:hover{
 }
 
 .lista-beneficios{
-    width: 40%;
+    width: 100%;
     display: inline-block;
     vertical-align: top;
 }
 
-.itens{
-    line-height: 1.5;
-}
 
 .itens:first-child{
     font-weight: bold;
-}
-
-.imagembeneficios{
-    width: 60%;
 }
 
 .mapa {
@@ -277,4 +270,33 @@ nav a:hover{
 
 .itens:before {
     content: "✪  ";
+}
+
+@media screen and (max-width:480px){
+    .caixa, .principal, .video, .mapa{
+        width:auto; 
+    }
+
+    .mapa, .principal, .beneficios{
+        margin: 1.5em auto;
+        left: auto;
+        right: auto;
+    }
+
+    .logo{
+        left: 0;
+        right: 0;
+    }
+
+    .nav{
+        left: 170px;
+        top: 60px;
+        line-height: 3em;
+    }
+
+    .beneficios{
+        width: 335px;
+    }
+
+    
 }
