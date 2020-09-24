@@ -257,7 +257,7 @@ body {
 
 }
 
-@media(min-width: 1000px) {
+@media(min-width: 769px) {
 	.conteudoPrincipal-cursos-link {
 		margin: 1.333%;
 	}
